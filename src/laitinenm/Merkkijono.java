@@ -12,7 +12,7 @@ public class Merkkijono {
         for (int i = 0; i < len; i+=2) 
         {
             charArray[i] = Character.toUpperCase(sourceString.charAt(i));
-            charArray[i+1] = sourceString.charAt(i+1);
+            charArray[i+1] = Character.toLowerCase(sourceString.charAt(i+1));
         } 
 
         return new String(charArray);
