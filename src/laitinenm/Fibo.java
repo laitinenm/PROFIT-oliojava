@@ -33,7 +33,7 @@ public class Fibo {
      */
     public static int fibo(int i){
         while(i>1)
-            return Fibo.fibo(i-1) + Fibo.fibo(i-2);
+            return fibo(i-1) + fibo(i-2);
 
         return i;
     }
