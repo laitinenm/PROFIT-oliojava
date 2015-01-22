@@ -1,7 +1,15 @@
 package laitinenm;
 
+/**
+ * @author mikalait
+ *
+ */
 public class Merkkijono {
 
+    /**
+     * @param sourceString
+     * @return taulukko merkkijono
+     */
     public static String getModifiedString(String sourceString)
     {
         int len = sourceString.length();
@@ -18,6 +26,9 @@ public class Merkkijono {
         return new String(charArray);
     }
     
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
         // TODO Auto-generated method stub
         String merkkijono = "Aasin silta alla auringon maan taivaan p‰‰kallon";

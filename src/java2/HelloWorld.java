@@ -23,6 +23,7 @@ public class HelloWorld {
 	
 	   /**
      * @param nimi nimi, jota huudetaan
+	 * @return merkkijono isolla kirjoitettuna
      */
     public String muutaIsoksi (String nimi){
         return nimi.toUpperCase();

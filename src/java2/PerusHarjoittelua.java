@@ -30,17 +30,17 @@ public class PerusHarjoittelua {
 		int lukuD = 2;
 		
 		double vastaus2 = lukuC/lukuD;
-		System.out.println("LukuC / lukuD = " + vastaus);
+		System.out.println("LukuC / lukuD = " + vastaus2);
 
 		// Aritmeettiset operaatiot
 		
 		int lukuE = 0;
 		
 		lukuE++; 
-		System.out.println("LukuE arvo lisäysoperaation jälkeen = " + LukuE );
+		System.out.println("LukuE arvo lisäysoperaation jälkeen = " + lukuE );
 		
 		lukuE--;
-		System.out.println("LukuE arvo vähennysoperaation jälkeen = " + LukuE );
+		System.out.println("LukuE arvo vähennysoperaation jälkeen = " + lukuE );
 		
 		lukuE = 0; // nollataan lukuE
 		
@@ -50,7 +50,7 @@ public class PerusHarjoittelua {
 		//Summaoperaatio
 		lukuE += 10;
 		
-		System.out.println("LukuE pitäisi tässä vaiheessa olla == " + LukuE);
+		System.out.println("LukuE pitäisi tässä vaiheessa olla == " + lukuE);
 		
 		
 		//Ehtolauseet ja toistorakenteet

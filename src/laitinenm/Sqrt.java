@@ -1,7 +1,14 @@
 package laitinenm;
 
+/**
+ * @author mikalait
+ *
+ */
 public class Sqrt {
 
+    /**
+     * @param root
+     */
     public static void printIfZeroModSqrt(double root)
     {
        if((Math.sqrt(root)*10)%10 == 0)
@@ -10,6 +17,9 @@ public class Sqrt {
        }
     }
     
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
         // tehtavat1.md, Lämmittelyt, Kokonaislukuja
         double root;
