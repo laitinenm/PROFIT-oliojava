@@ -1,6 +1,7 @@
 package laitinenm;
 
 import fi.jyu.mit.graphics.*;
+import laitinenm.Piste;
 
 /**
  * Harjoitellaan piirtely‰ ja kuormittamista
@@ -62,7 +63,7 @@ public class Lumiukko {
      * @param pikkupallonSade
      */
     public void piirraLumiukko(EasyWindow w,double x, double y,double isonPallonSade, double keskipallonSade, double pikkupallonSade) {
-
+        
             double keskiPallonY =  y + isonPallonSade + keskipallonSade; //ratkaise t‰h‰n keskiPallonY
             double pikkuPallonY =  keskiPallonY + keskipallonSade + pikkupallonSade; //ratkaise t‰h‰n pikkuPallonY
             
@@ -85,24 +86,32 @@ public class Lumiukko {
         Lumiukko lumiukko = new Lumiukko ();
         
         // Piirret‰‰n lumiukko (ikkuna, johon piirret‰‰n,x,y,alimman pallon s‰de, keskipallon s‰de, ylimm‰n pallon s‰de)
-        lumiukko.piirraLumiukko(window,100,100,35,25,10);
+        // lumiukko.piirraLumiukko(window,100,100,35,25,10);
         
         /**
          *Pist‰ alla olevat toimimaan
          **/
-         double x = 100;
+ /*        double x = 100;
          double y = 100;
          double isonPallonSade = 35;
          double keskiPallonSade = 25;
          double pienenPallonSade = 10;
          double vali = isonPallonSade+isonPallonSade+pienenPallonSade;
          
-         lumiukko.piirraLumiukko(window, x+=vali, y); // piirt‰‰ standardikokoisen lumiukon
+         lumiukko.piirraLumiukko(window, x+=vali, y); 
          lumiukko.piirraLumiukko(window, x+=vali, y, isonPallonSade);
          lumiukko.piirraLumiukko(window, x+=vali, y, isonPallonSade, keskiPallonSade); 
          lumiukko.piirraLumiukko(window, x+=vali, y, isonPallonSade, keskiPallonSade, pienenPallonSade);
+*/         
          
-        
+        //Luodaan piste-olio
+        Piste piste = new Piste (100,100);
+
+         lumiukko.piirraLumiukko(window,100,100,35,25,10);
+         
+
+         
+         
         // N‰ytet‰‰n ikkuna
         window.showWindow();
     }
