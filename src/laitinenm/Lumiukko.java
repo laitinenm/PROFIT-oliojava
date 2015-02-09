@@ -73,6 +73,20 @@ public class Lumiukko {
             
     }
 
+
+    public void piirraLumiukko(EasyWindow w, Piste piste, double isonPallonSade, double keskipallonSade, double pikkupallonSade) {
+        
+        w.addCircle(piste.getX(),piste.getY(),isonPallonSade); //piirt‰‰ ison pallon
+        piste.setY(piste.getY() + isonPallonSade + keskipallonSade);
+
+        w.addCircle(piste.getX(),piste.getY(),keskipallonSade); //piirt‰‰ keskipallon
+        piste.setY(piste.getY() + keskipallonSade + pikkupallonSade);
+
+        w.addCircle(piste.getX(),piste.getY(),pikkupallonSade); //piirt‰‰ pikkupallon
+        
+}
+
+    
     /**
      * @param args ei k‰ytˆss‰
      */
@@ -106,12 +120,14 @@ public class Lumiukko {
          
         //Luodaan piste-olio
         Piste piste = new Piste (100,100);
+        lumiukko.piirraLumiukko(window,piste,35,25,10);
 
-         lumiukko.piirraLumiukko(window,100,100,35,25,10);
-         
+        piste.setXY(300, 200);
+        lumiukko.piirraLumiukko(window,piste,35,25,10);
 
-         
-         
+        piste.setXY(200, 300);
+        lumiukko.piirraLumiukko(window,piste,35,25,10);
+
         // N‰ytet‰‰n ikkuna
         window.showWindow();
     }
